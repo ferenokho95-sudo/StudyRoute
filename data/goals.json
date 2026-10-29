@@ -1,0 +1,25 @@
+{
+  "data_analyst": {
+    "title": "Data Analyst",
+    "skills": [
+      "pandas",
+      "sql",
+      "stats"
+    ]
+  },
+  "ml_engineer": {
+    "title": "ML Engineer",
+    "skills": [
+      "ml",
+      "sql"
+    ]
+  },
+  "ai_product": {
+    "title": "AI Product Specialist",
+    "skills": [
+      "pandas",
+      "stats",
+      "llm"
+    ]
+  }
+}

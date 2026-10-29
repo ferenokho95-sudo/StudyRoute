@@ -1,0 +1,470 @@
+[
+  {
+    "id": "python_1",
+    "skill": "python",
+    "phase": "diagnostic",
+    "question": "Чему равен len([2, 4, 6])?",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "6"
+    },
+    "answer": "b",
+    "explanation": "len считает количество элементов."
+  },
+  {
+    "id": "python_2",
+    "skill": "python",
+    "phase": "diagnostic",
+    "question": "Как сравнить a и b на равенство?",
+    "options": {
+      "a": "a = b",
+      "b": "a == b",
+      "c": "a != b"
+    },
+    "answer": "b",
+    "explanation": "== сравнивает, = присваивает."
+  },
+  {
+    "id": "python_3",
+    "skill": "python",
+    "phase": "diagnostic",
+    "question": "Какой тип связывает ключи и значения?",
+    "options": {
+      "a": "list",
+      "b": "tuple",
+      "c": "dict"
+    },
+    "answer": "c",
+    "explanation": "dict хранит пары ключ — значение."
+  },
+  {
+    "id": "python_4",
+    "skill": "python",
+    "phase": "control",
+    "question": "Что вернёт [10, 20, 30][1]?",
+    "options": {
+      "a": "10",
+      "b": "20",
+      "c": "30"
+    },
+    "answer": "b",
+    "explanation": "Индексы начинаются с 0."
+  },
+  {
+    "id": "python_5",
+    "skill": "python",
+    "phase": "control",
+    "question": "Что делает return внутри функции?",
+    "options": {
+      "a": "Возвращает значение",
+      "b": "Печатает строку",
+      "c": "Повторяет цикл"
+    },
+    "answer": "a",
+    "explanation": "return завершает функцию и возвращает результат."
+  },
+  {
+    "id": "python_6",
+    "skill": "python",
+    "phase": "control",
+    "question": "Чему равен sum([1, 3, 5])?",
+    "options": {
+      "a": "3",
+      "b": "8",
+      "c": "9"
+    },
+    "answer": "c",
+    "explanation": "Сумма элементов: 1+3+5=9."
+  },
+  {
+    "id": "pandas_1",
+    "skill": "pandas",
+    "phase": "diagnostic",
+    "question": "Чем загрузить CSV в pandas?",
+    "options": {
+      "a": "read_csv",
+      "b": "to_csv",
+      "c": "read_sql"
+    },
+    "answer": "a",
+    "explanation": "read_csv читает CSV в DataFrame."
+  },
+  {
+    "id": "pandas_2",
+    "skill": "pandas",
+    "phase": "diagnostic",
+    "question": "Как найти пропущенные значения?",
+    "options": {
+      "a": "sort_values",
+      "b": "isna",
+      "c": "head"
+    },
+    "answer": "b",
+    "explanation": "isna возвращает маску пропусков."
+  },
+  {
+    "id": "pandas_3",
+    "skill": "pandas",
+    "phase": "diagnostic",
+    "question": "Что использовать для агрегации продаж по товарам?",
+    "options": {
+      "a": "groupby",
+      "b": "rename",
+      "c": "tail"
+    },
+    "answer": "a",
+    "explanation": "groupby создаёт группы для агрегации."
+  },
+  {
+    "id": "pandas_4",
+    "skill": "pandas",
+    "phase": "control",
+    "question": "Какая операция соединяет таблицы по ключу?",
+    "options": {
+      "a": "dropna",
+      "b": "merge",
+      "c": "describe"
+    },
+    "answer": "b",
+    "explanation": "merge выполняет соединение таблиц."
+  },
+  {
+    "id": "pandas_5",
+    "skill": "pandas",
+    "phase": "control",
+    "question": "Зачем проверять уникальность ключей перед merge?",
+    "options": {
+      "a": "Для цвета таблицы",
+      "b": "Чтобы убрать индексы",
+      "c": "Чтобы избежать размножения строк"
+    },
+    "answer": "c",
+    "explanation": "Неуникальные ключи с обеих сторон создают много сочетаний."
+  },
+  {
+    "id": "pandas_6",
+    "skill": "pandas",
+    "phase": "control",
+    "question": "Чем отличается fillna от dropna?",
+    "options": {
+      "a": "Заполняет, а не удаляет пропуски",
+      "b": "Только меняет названия",
+      "c": "Ничем"
+    },
+    "answer": "a",
+    "explanation": "fillna заполняет пропуски; dropna удаляет строки или столбцы."
+  },
+  {
+    "id": "sql_1",
+    "skill": "sql",
+    "phase": "diagnostic",
+    "question": "Что фильтрует строки до группировки?",
+    "options": {
+      "a": "WHERE",
+      "b": "HAVING",
+      "c": "ORDER BY"
+    },
+    "answer": "a",
+    "explanation": "WHERE применяется к исходным строкам."
+  },
+  {
+    "id": "sql_2",
+    "skill": "sql",
+    "phase": "diagnostic",
+    "question": "Что сохраняет LEFT JOIN?",
+    "options": {
+      "a": "Только совпадения",
+      "b": "Все строки левой таблицы",
+      "c": "Все строки правой таблицы"
+    },
+    "answer": "b",
+    "explanation": "LEFT JOIN сохраняет левую сторону."
+  },
+  {
+    "id": "sql_3",
+    "skill": "sql",
+    "phase": "diagnostic",
+    "question": "Что считает COUNT(*)?",
+    "options": {
+      "a": "Только непустые значения",
+      "b": "Только уникальные значения",
+      "c": "Все строки"
+    },
+    "answer": "c",
+    "explanation": "COUNT(*) считает строки независимо от NULL в отдельных столбцах."
+  },
+  {
+    "id": "sql_4",
+    "skill": "sql",
+    "phase": "control",
+    "question": "Как отфильтровать группы по SUM(amount)?",
+    "options": {
+      "a": "HAVING",
+      "b": "WHERE",
+      "c": "LIMIT"
+    },
+    "answer": "a",
+    "explanation": "HAVING фильтрует после группировки."
+  },
+  {
+    "id": "sql_5",
+    "skill": "sql",
+    "phase": "control",
+    "question": "Что делает GROUP BY?",
+    "options": {
+      "a": "Сортирует текст",
+      "b": "Объединяет строки в группы",
+      "c": "Удаляет таблицу"
+    },
+    "answer": "b",
+    "explanation": "GROUP BY определяет группы для агрегатов."
+  },
+  {
+    "id": "sql_6",
+    "skill": "sql",
+    "phase": "control",
+    "question": "Что возвращает COUNT(email) при NULL в email?",
+    "options": {
+      "a": "Число всех строк",
+      "b": "Число NULL",
+      "c": "Число непустых email"
+    },
+    "answer": "c",
+    "explanation": "COUNT(column) исключает NULL."
+  },
+  {
+    "id": "stats_1",
+    "skill": "stats",
+    "phase": "diagnostic",
+    "question": "Какая метрика устойчивее к единичным выбросам?",
+    "options": {
+      "a": "Среднее",
+      "b": "Медиана",
+      "c": "Максимум"
+    },
+    "answer": "b",
+    "explanation": "Медиана зависит от порядка, а не величины крайнего выброса."
+  },
+  {
+    "id": "stats_2",
+    "skill": "stats",
+    "phase": "diagnostic",
+    "question": "Доказывает ли корреляция причинность?",
+    "options": {
+      "a": "Да всегда",
+      "b": "Только если большая",
+      "c": "Нет"
+    },
+    "answer": "c",
+    "explanation": "Возможны смешивающие факторы и обратная причинность."
+  },
+  {
+    "id": "stats_3",
+    "skill": "stats",
+    "phase": "diagnostic",
+    "question": "Как распределять пользователей в A/B?",
+    "options": {
+      "a": "Случайно",
+      "b": "По желанию",
+      "c": "По результату покупки"
+    },
+    "answer": "a",
+    "explanation": "Рандомизация уменьшает систематические различия групп."
+  },
+  {
+    "id": "stats_4",
+    "skill": "stats",
+    "phase": "control",
+    "question": "Когда выбирать основную метрику A/B?",
+    "options": {
+      "a": "После просмотра результатов",
+      "b": "До начала теста",
+      "c": "После остановки"
+    },
+    "answer": "b",
+    "explanation": "Выбор до теста снижает риск подгонки анализа."
+  },
+  {
+    "id": "stats_5",
+    "skill": "stats",
+    "phase": "control",
+    "question": "Какова медиана [1, 2, 3, 4, 100]?",
+    "options": {
+      "a": "22",
+      "b": "100",
+      "c": "3"
+    },
+    "answer": "c",
+    "explanation": "Среднее упорядоченного списка — третий элемент 3."
+  },
+  {
+    "id": "stats_6",
+    "skill": "stats",
+    "phase": "control",
+    "question": "Является ли p-value вероятностью истинности нулевой гипотезы?",
+    "options": {
+      "a": "Нет",
+      "b": "Да",
+      "c": "Всегда 50%"
+    },
+    "answer": "a",
+    "explanation": "p-value относится к данным при условии нулевой гипотезы, не к вероятности гипотезы."
+  },
+  {
+    "id": "ml_1",
+    "skill": "ml",
+    "phase": "diagnostic",
+    "question": "На каких данных обучать StandardScaler?",
+    "options": {
+      "a": "На всех",
+      "b": "Только на train",
+      "c": "Только на test"
+    },
+    "answer": "b",
+    "explanation": "Параметры преобразований оцениваются на train."
+  },
+  {
+    "id": "ml_2",
+    "skill": "ml",
+    "phase": "diagnostic",
+    "question": "Что такое recall?",
+    "options": {
+      "a": "TP/(TP+FN)",
+      "b": "TP/(TP+FP)",
+      "c": "TN/(TN+FP)"
+    },
+    "answer": "a",
+    "explanation": "Recall отражает полноту поиска положительного класса."
+  },
+  {
+    "id": "ml_3",
+    "skill": "ml",
+    "phase": "diagnostic",
+    "question": "Как делить временные данные?",
+    "options": {
+      "a": "Случайно всегда",
+      "b": "Будущее в train",
+      "c": "Прошлое в train, будущее в test"
+    },
+    "answer": "c",
+    "explanation": "Нужно воспроизвести прогноз будущих наблюдений."
+  },
+  {
+    "id": "ml_4",
+    "skill": "ml",
+    "phase": "control",
+    "question": "Для чего отложенный test?",
+    "options": {
+      "a": "Для подбора каждого гиперпараметра",
+      "b": "Для финальной независимой проверки",
+      "c": "Для обучения словаря"
+    },
+    "answer": "b",
+    "explanation": "Регулярный подбор на test превращает его в validation."
+  },
+  {
+    "id": "ml_5",
+    "skill": "ml",
+    "phase": "control",
+    "question": "Precision при TP=6, FP=2 равен:",
+    "options": {
+      "a": "0.6",
+      "b": "0.5",
+      "c": "0.75"
+    },
+    "answer": "c",
+    "explanation": "6/(6+2)=0.75."
+  },
+  {
+    "id": "ml_6",
+    "skill": "ml",
+    "phase": "control",
+    "question": "Что означает переобучение?",
+    "options": {
+      "a": "Хорошо на train, хуже на новых данных",
+      "b": "Любая сложная модель",
+      "c": "Обучение без данных"
+    },
+    "answer": "a",
+    "explanation": "Модель запоминает особенности train и хуже обобщает."
+  },
+  {
+    "id": "llm_1",
+    "skill": "llm",
+    "phase": "diagnostic",
+    "question": "Что добавляет RAG к запросу модели?",
+    "options": {
+      "a": "Случайные числа",
+      "b": "Найденные документы",
+      "c": "Пароль пользователя"
+    },
+    "answer": "b",
+    "explanation": "Retrieval находит контекст и передаёт его генератору."
+  },
+  {
+    "id": "llm_2",
+    "skill": "llm",
+    "phase": "diagnostic",
+    "question": "Гарантирует ли RAG отсутствие выдумок?",
+    "options": {
+      "a": "Нет",
+      "b": "Да",
+      "c": "Только с длинным контекстом"
+    },
+    "answer": "a",
+    "explanation": "Нужны проверки фактов и корректности источников."
+  },
+  {
+    "id": "llm_3",
+    "skill": "llm",
+    "phase": "diagnostic",
+    "question": "Что нужно для расчёта стоимости API?",
+    "options": {
+      "a": "Только время",
+      "b": "Число пользователей",
+      "c": "Токены и тарифы"
+    },
+    "answer": "c",
+    "explanation": "Обычно считаются входные и выходные токены по соответствующим тарифам."
+  },
+  {
+    "id": "llm_4",
+    "skill": "llm",
+    "phase": "control",
+    "question": "Как трактовать инструкции внутри найденного документа?",
+    "options": {
+      "a": "Выше системных",
+      "b": "Как недоверенные данные",
+      "c": "Как обязательные команды"
+    },
+    "answer": "b",
+    "explanation": "Документы не должны менять правила работы системы."
+  },
+  {
+    "id": "llm_5",
+    "skill": "llm",
+    "phase": "control",
+    "question": "Достаточно ли ключевых слов для полной оценки ответа?",
+    "options": {
+      "a": "Да",
+      "b": "Только для длинных ответов",
+      "c": "Нет, это прокси"
+    },
+    "answer": "c",
+    "explanation": "Ключевые слова не проверяют смысл и отсутствие противоречий."
+  },
+  {
+    "id": "llm_6",
+    "skill": "llm",
+    "phase": "control",
+    "question": "Что делать при отсутствии ответа в базе?",
+    "options": {
+      "a": "Выдумать правдоподобно",
+      "b": "Уточнить вопрос или передать специалисту",
+      "c": "Скрыть источник"
+    },
+    "answer": "b",
+    "explanation": "Необходим безопасный маршрут для неизвестных запросов."
+  }
+]
